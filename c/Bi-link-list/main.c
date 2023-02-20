@@ -47,8 +47,9 @@ void input_data(Node *head)
 	char *null = "null";
 	while (1)
 	{
-		scanf("%d%f%s",&tmp->data.id, &tmp->data.price, &tmp->data.name);
-		printf("%d %.2f %s\r\n",tmp->data.id, tmp->data.price, tmp->data.name);
+		printf("\r\n");
+		scanf("%s%d%f", &tmp->data.name, &tmp->data.id, &tmp->data.price);
+		printf("[OK!] Title: %s    ID: %d    Price: %.2f \r\n", tmp->data.name,tmp->data.id, tmp->data.price);
 		
 		if (strcmp(tmp->data.name, null) != 0)
 		{
@@ -76,6 +77,9 @@ void print_LinkList(Node *head)
 {
 	Node *tmp = head;
 	int i = 0;
+	
+	printf("\r\n");
+	
 	do {
 		printf("Node %3d:  addr = %#X   last = %#X  next = %#X  data.id = %3d  data.name = %20s  data.price = %.2f\r\n", i, tmp, tmp->last, tmp->next, tmp->data.id, tmp->data.name, tmp->data.price);
 		i++;
@@ -87,15 +91,21 @@ void print_LinkList(Node *head)
 void data_store(FILE *pf, Node *head)
 {
 	Node *tmp = head;
-	pf = fopen("data.txt", "a");
+	pf = fopen("../data.txt", "a");
+	
+	printf("\r\n");
 	
 	if (pf == NULL)
 	{
-		printf("can not find such file in disk\r\n");
+		printf("ERROR: Can not find such file in disk\r\n");
 	}
 	else
 	{
+		printf("[OK!] Find such file in directory, starting write data to data.txt\r\n");
 		int i = 0;
+		
+		fprintf(pf, "\r\n");
+			
 		do {
 			fprintf(pf, "Node %3d:  addr = %#X   last = %#X  next = %#X  data.id = %3d  data.name = %20s  data.price = %.2f\r\n", i, tmp, tmp->last, tmp->next, tmp->data.id, tmp->data.name, tmp->data.price);
 			i++;
@@ -103,7 +113,10 @@ void data_store(FILE *pf, Node *head)
 		}
 		while (tmp != head);
 		
+		fprintf(pf, "\r\n");
+		
 		fclose(pf);
+		printf("[OK!] Finished\r\n");
 	}
 }
 
@@ -115,8 +128,8 @@ int main()
 	Head = malloc(sizeof(Node));
 	Init_LinkList(Head);
 	
-	printf("init complete, please input shares infomation: ID, price, name.\r\n");
-	printf("The stock ID should be belong 000~999 ,the name should be less than 20 characters\r\n");
+	printf("[OK!] Initializating complete, please input stock infomation:title, ID, price.\r\n");
+	printf("[Warning!] The stock ID should be belong 000~999 ,the name should be less than 20 characters\r\n");
 	input_data(Head);
 	
 	print_LinkList(Head);
