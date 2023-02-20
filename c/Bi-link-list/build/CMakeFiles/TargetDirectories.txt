@@ -1,3 +1,0 @@
-/home/jinxi/Documents/code/c-cpp-code/c/Bi-link-list/build/CMakeFiles/linklist.dir
-/home/jinxi/Documents/code/c-cpp-code/c/Bi-link-list/build/CMakeFiles/edit_cache.dir
-/home/jinxi/Documents/code/c-cpp-code/c/Bi-link-list/build/CMakeFiles/rebuild_cache.dir
