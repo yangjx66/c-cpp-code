@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/linklist.dir/main.c.o -o linklist 
