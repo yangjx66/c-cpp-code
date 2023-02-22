@@ -88,6 +88,21 @@ void find_elements(Node *head)
 	while (tmp != head);
 }
 
+void reverse_find_elements(Node *head)
+{
+	Node *tmp = head;
+	int i = 0;
+	
+	printf("\r\n");
+	
+	do {
+		printf("Node %3d:  addr = %#X   last = %#X  next = %#X  data.id = %3d  data.name = %20s  data.price = %.2f\r\n", i, tmp, tmp->last, tmp->next, tmp->data.id, tmp->data.name, tmp->data.price);
+		i++;
+		tmp = tmp->last;
+	}
+	while (tmp != head);
+}
+
 void data_store(FILE *pf, Node *head)
 {
 	Node *tmp = head;
@@ -132,7 +147,10 @@ int main()
 	printf("[Warning!] The stock ID should be belong 000~999 ,the name should be less than 20 characters\r\n");
 	input_data(Head);
 	
+	printf("print linkedlist\r\n");
 	find_elements(Head);
+	printf("print linkedlist reversed\r\n");
+	reverse_find_elements(Head);
 	data_store(data_file, Head);
 	return 0;
 }
