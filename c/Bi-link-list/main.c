@@ -51,7 +51,7 @@ void input_data(Node *head)
 		scanf("%s%d%f", &tmp->data.name, &tmp->data.id, &tmp->data.price);
 		printf("[OK!] Title: %s    ID: %d    Price: %.2f \r\n", tmp->data.name,tmp->data.id, tmp->data.price);
 		
-		if (strcmp(tmp->data.name, null) != 0)
+		if (strcmp(tmp->data.name, null) != 0) // string compare, is "null"?
 		{
 			last->next = tmp;
 			tmp->last = last;
@@ -73,7 +73,7 @@ void input_data(Node *head)
 	}
 }
 
-void print_LinkList(Node *head)
+void find_elements(Node *head)
 {
 	Node *tmp = head;
 	int i = 0;
@@ -132,7 +132,7 @@ int main()
 	printf("[Warning!] The stock ID should be belong 000~999 ,the name should be less than 20 characters\r\n");
 	input_data(Head);
 	
-	print_LinkList(Head);
+	find_elements(Head);
 	data_store(data_file, Head);
 	return 0;
 }
