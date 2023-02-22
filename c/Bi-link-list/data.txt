@@ -10,3 +10,6 @@ Node   1:  addr = 0X2573FB00   last = 0X2573F2A0  next = 0X2573FB40  data.id =  
 Node   2:  addr = 0X2573FB40   last = 0X2573FB00  next = 0X2573FB80  data.id = 888  data.name =                 lili  data.price = 42.60
 Node   3:  addr = 0X2573FB80   last = 0X2573FB40  next = 0X2573F2A0  data.id =  87  data.name =                weirl  data.price = 37.10
 
+
+Node   0:  addr = 0XCCF922A0   last = 0XCCF922A0  next = 0XCCF922A0  data.id =  52  data.name =                 yank  data.price = 7.90
+
