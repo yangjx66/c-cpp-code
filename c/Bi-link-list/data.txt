@@ -13,3 +13,6 @@ Node   3:  addr = 0X2573FB80   last = 0X2573FB40  next = 0X2573F2A0  data.id =  
 
 Node   0:  addr = 0XCCF922A0   last = 0XCCF922A0  next = 0XCCF922A0  data.id =  52  data.name =                 yank  data.price = 7.90
 
+
+Node   0:  addr = 0XD8D6D2A0   last = 0XD8D6D2A0  next = 0XD8D6D2A0  data.id =  45  data.name =                  hun  data.price = 3.60
+
