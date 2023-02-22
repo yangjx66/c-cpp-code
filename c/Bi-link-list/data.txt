@@ -16,3 +16,14 @@ Node   0:  addr = 0XCCF922A0   last = 0XCCF922A0  next = 0XCCF922A0  data.id =  
 
 Node   0:  addr = 0XD8D6D2A0   last = 0XD8D6D2A0  next = 0XD8D6D2A0  data.id =  45  data.name =                  hun  data.price = 3.60
 
+
+Node   0:  addr = 0X9DE02A0   last = 0X9DE0B40  next = 0X9DE0B00  data.id =  84  data.name =                 hake  data.price = 2.30
+Node   1:  addr = 0X9DE0B00   last = 0X9DE02A0  next = 0X9DE0B40  data.id = 349  data.name =                  tak  data.price = 22.30
+Node   2:  addr = 0X9DE0B40   last = 0X9DE0B00  next = 0X9DE02A0  data.id = 211  data.name =                  rai  data.price = 31.50
+
+
+Node   0:  addr = 0XF4A332A0   last = 0XF4A33B80  next = 0XF4A33B00  data.id = 666  data.name =                  sss  data.price = 6.30
+Node   1:  addr = 0XF4A33B00   last = 0XF4A332A0  next = 0XF4A33B40  data.id =  45  data.name =                  aaa  data.price = 2.30
+Node   2:  addr = 0XF4A33B40   last = 0XF4A33B00  next = 0XF4A33B80  data.id = 125  data.name =                  ccc  data.price = 33.70
+Node   3:  addr = 0XF4A33B80   last = 0XF4A33B40  next = 0XF4A332A0  data.id =  45  data.name =                  vvv  data.price = 1.20
+
