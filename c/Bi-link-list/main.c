@@ -4,6 +4,9 @@
 #include <string.h>
 
 #define DEBUG(x) printf("%d\r\n", x)
+typedef enum {
+	POSITIVE = 0, REVERSE = !POSITIVE
+} TraversDirection;
 
 struct Data {
 	int id;
@@ -70,6 +73,36 @@ void input_data(Node *head)
 			
 			break;
 		}
+	}
+}
+
+// travers LinkedList from the specified node and manually select positive or reverse.
+void travers_linkedlist(Node *base, TraversDirection dir)
+{
+	Node *tmp = base;
+	int i = 0;
+
+	if (dir == POSITIVE) // forward
+	{
+		printf("\r\n");
+	
+		do {
+			printf("Node %3d:  addr = %#X   last = %#X  next = %#X  data.id = %3d  data.name = %20s  data.price = %.2f\r\n", i, tmp, tmp->last, tmp->next, tmp->data.id, tmp->data.name, tmp->data.price);
+			i++;
+			tmp = tmp->next;
+		}
+		while (tmp != base);
+	}
+	else // backward
+	{
+		printf("\r\n");
+	
+		do {
+			printf("Node %3d:  addr = %#X   last = %#X  next = %#X  data.id = %3d  data.name = %20s  data.price = %.2f\r\n", i, tmp, tmp->last, tmp->next, tmp->data.id, tmp->data.name, tmp->data.price);
+			i++;
+			tmp = tmp->last;
+		}
+		while (tmp != base);
 	}
 }
 
@@ -148,9 +181,10 @@ int main()
 	input_data(Head);
 	
 	printf("print linkedlist\r\n");
-	find_elements(Head);
+	travers_linkedlist(Head, POSITIVE);
 	printf("print linkedlist reversed\r\n");
-	reverse_find_elements(Head);
+	travers_linkedlist(Head, POSITIVE);
 	data_store(data_file, Head);
+	
 	return 0;
 }
