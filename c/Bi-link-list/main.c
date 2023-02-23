@@ -1,3 +1,14 @@
+/**
+ * @file main.c
+ * @author your name (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2023-02-20
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <malloc.h>
@@ -185,6 +196,6 @@ int main()
 	printf("print linkedlist reversed\r\n");
 	travers_linkedlist(Head, POSITIVE);
 	data_store(data_file, Head);
-	
+
 	return 0;
 }
