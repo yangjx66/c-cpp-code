@@ -27,3 +27,8 @@ Node   1:  addr = 0XF4A33B00   last = 0XF4A332A0  next = 0XF4A33B40  data.id =  
 Node   2:  addr = 0XF4A33B40   last = 0XF4A33B00  next = 0XF4A33B80  data.id = 125  data.name =                  ccc  data.price = 33.70
 Node   3:  addr = 0XF4A33B80   last = 0XF4A33B40  next = 0XF4A332A0  data.id =  45  data.name =                  vvv  data.price = 1.20
 
+
+Node   0:  addr = 0XDD4872A0   last = 0XDD487B40  next = 0XDD487B00  data.id = 666  data.name =                  hcn  data.price = 12.70
+Node   1:  addr = 0XDD487B00   last = 0XDD4872A0  next = 0XDD487B40  data.id =  56  data.name =                   dk  data.price = 124.00
+Node   2:  addr = 0XDD487B40   last = 0XDD487B00  next = 0XDD4872A0  data.id =  55  data.name =                   ql  data.price = 8.10
+
