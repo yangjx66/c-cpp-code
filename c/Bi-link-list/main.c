@@ -15,6 +15,7 @@
 #include <string.h>
 
 #define DEBUG(x) printf("%d\r\n", x)
+
 typedef enum {
 	POSITIVE = 0, REVERSE = !POSITIVE
 } TraversDirection;
