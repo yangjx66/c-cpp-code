@@ -1,6 +1,6 @@
 # ***c-cplusplus-code***
 
-<img src = "https://www.google.com.hk/imgres?imgurl=https%3A%2F%2Fimg.pngsucai.com%2F00%2F87%2F03%2F73f091e1fadd76e7.webp&tbnid=SvtVEAYRqgmy8M&vet=12ahUKEwjAzI7krej-AhWYm1YBHXXqCtAQMygdegUIARDWAQ..i&imgrefurl=https%3A%2F%2Fwww.pngsucai.com%2Ffree-png%2F402658.html&docid=9rB4lSZrCQegSM&w=204&h=204&itg=1&q=C%E8%AF%AD%E8%A8%80%E5%9B%BE%E6%A0%87&ved=2ahUKEwjAzI7krej-AhWYm1YBHXXqCtAQMygdegUIARDWAQ">
+<img src = "https://www.pngsucai.com/free-png/402658.html">
 [toc]
 
 ### 说明	Description:
