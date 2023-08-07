@@ -9,7 +9,7 @@
 > **Build**         代码使用 CMake 工具构建, CMake 源码与C/C++源码位于同一目录下.
 >
 >
-> **Platform**      Aarch64 GNU/Linux
+> **Platform**      GNU/Linux
 >
 >
 > **Author**        Yang Jinxi  at 2023.02.20
